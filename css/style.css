@@ -1,1 +1,103 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+    background-color: lightblue;
+}
+
+.topGrid, .localGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.card {
+    grid-column: span 1;
+    max-width: 90%;
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    border: 3px solid darkblue;
+    background-color: rgb(205, 204, 204);
+}
+
+header {
+    display: grid;
+    padding: 18px;
+    margin: -8px;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(205, 204, 204);
+}
+
+header h1 {
+    grid-column: span 2;
+}
+
+.button-row {
+    grid-column: span 4;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+button {
+    border: 2px solid darkblue;
+    padding: 2px;
+    background-color: rgb(205, 204, 204);
+    font-weight: bolder;
+}
+
+#localOrTop ul, #studiesType ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 10px;
+    padding: 0px;
+}
+
+li a {
+    text-decoration: underline;
+    font-size: 22px;
+    font-weight: bolder;
+    color: black;
+}
+
+img {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+}
+
+#top10, #local {
+    grid-column: span 4;
+    padding-left: 10px;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 1000px) {
+    .topGrid, .localGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    #top10, #local, .button-row {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .topGrid, .localGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    #top10, #local, .button-row {
+        grid-column: span 1;
+    }
+}
