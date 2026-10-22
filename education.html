@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduate Schools Education</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/script.js"></script>
+</head>
+<body onload="cardStart()">
+    <header>
+        <h1>Graduate Schools Comparison</h1>
+        <h2>Education</h2>
+
+        <nav id="studiesType">
+            <ul>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="math.html">Math</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="engineering.html">Engineering</a></li>
+                <li><a href="medicine.html">Medicine</a></li>
+                <li><a href="law.html">Law</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="art.html">Art</a></li>
+                <li><a href="computerScience.html">Computer Science</a></li>
+            </ul>
+        </nav>
+
+        <nav id="localOrTop">
+            <ul>
+                <li><a href="#top10">Top 10</a></li>
+                <li><a href="#local">Local 10</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="topGrid">
+            <h2 id="top10">Top 10</h2>
+            <div class="button-row" id="schools">
+                <button onclick="toggleCard('uwMadison')">UW-Madison</button>
+                <button onclick="toggleCard('northwestern')">Northwestern</button>
+                <button onclick="toggleCard('uFlorida')">University of Florida</button>
+                <button onclick="toggleCard('umAnnArbor')">UM-Ann Arbor</button>
+                <button onclick="toggleCard('vanderbilt')">Vanderbilt</button>
+                <button onclick="toggleCard('harvard')">Harvard</button>
+                <button onclick="toggleCard('NYU')">NYU</button>
+                <button onclick="toggleCard('columbia')">Columbia</button>
+                <button onclick="toggleCard('ucBerkeley')">UC-Berkeley</button>
+                <button onclick="toggleCard('UCLA')">UCLA</button>
+            </div>
+            <div class="card" id="uwMadison" style="display:none">
+                <h3>University of Wisconsin - Madison</h3>
+                <h4>#1 in the U.S. for Education.</h4>
+                <p>UW-Madison is part of the big 10 schools in America, and it offers a fun and enriching experience!</p>
+                <img src="images/uwMadison.jpg" alt="A photo of UW-Madison's Campus.">
+                <p>“University of Wisconsin–Madison Named an Innovation and Economic Prosperity University.” News, 15 Oct. 2025, news.wisc.edu/ university-of-wisconsin-madison-named-an-innovation-and-economic-prosperity-university/.</p>
+                <a href="https://gradapply.wisc.edu/apply/">UW-Madison Graduate Admissions</a>
+            </div>
+            <div class="card" id="northwestern" style="display:none">
+                <h3>Northwestern University</h3>
+                <h4>#2 in the U.S. for Education.</h4>
+                <p>Located in Chicago, Illinois, Northwestern offers an urban, thrilling, and social graduate experience!</p>
+                <img src="images/northwestern.jpg" alt="A photo of Northwestern's Campus.">
+                <p>University Reviews Policies after Off-Campus Shooting - Northwestern Now, news.northwestern.edu/stories/2023/ 04/university-reviews-policies-after-off-campus-shooting.</p>
+                <a href="https://www.northwestern.edu/admissions/graduate-admissions.html">Northwestern Graduate Admissions</a>
+            </div>
+            <div class="card" id="uFlorida" style="display:none">
+                <h3>University of Florida - Gainesville</h3>
+                <h4>#2 in the U.S. for Education.</h4>
+                <p>Located in Gainesville, Florida, UF-Gainesville is a tropical and entertaining experience for a graduate school!</p>
+                <img src="images/uFlorida.jpg" alt="A photo of UF-Gainesville's Campus.">
+                <p>Costeines, Michael. “University of Florida Receives 5-Star Grade as One of America’s Best Colleges.” Florida’s Voice, 17 June 2024, flvoicenews.com/university-of-florida-receives-5-star-grade-as-one-of-americas-best-colleges/.</p>
+                <a href="https://admissions.ufl.edu/apply/graduate/">UF-Gainesville Graduate Admissions</a>
+            </div>
+            <div class="card" id="umAnnArbor" style="display:none">
+                <h3>University of Michigan - Ann Arbor</h3>
+                <h4>#2 in the U.S. for Education.</h4>
+                <p>UM-Ann Arbor is a beautiful and historic college filled with bright and inquisitive students!</p>
+                <img src="images/umAnnArbor.jpg" alt="A photo of UM-Ann Arbor's Campus.">
+                <p>www.collegetuitioncompare.com/edu/ 170976/university-of-michigan-ann-arbor/.</p>
+                <a href="https://rackham.umich.edu/admissions/applying/">UM-Ann Arbor Graduate Admissions</a>
+            </div>
+            <div class="card" id="vanderbilt" style="display:none">
+                <h3>Vanderbilt University</h3>
+                <h4>#5 in the U.S. for Education.</h4>
+                <p>Vanderbilt is located in Nashville, Tennessee, so there will be plenty of musical fun mixed with education!</p>
+                <img src="images/vanderbilt.jpg" alt="A photo of Vanderbilt's Campus.">
+                <p>Villet, Reagan. “Graduate Student Council Announces 2025 Anchor Award Winners.” Vanderbilt University, Vanderbilt University, 4 Dec. 1970, news.vanderbilt.edu/2025/12/04/ graduate-student-council-announces-2025-anchor-award-winners/.</p>
+                <a href="https://gradschool.vanderbilt.edu/admissions/apply/">Vanderbilt Graduate Admissions</a>
+            </div>
+            <div class="card" id="harvard" style="display:none">
+                <h3>Harvard University</h3>
+                <h4>#6 in the U.S. for Education.</h4>
+                <p>Located in Cambridge, Massachusetts, Harvard is one of the most notable schools in the United States!</p>
+                <img src="images/harvard.jpg" alt="A photo of Harvard's Campus.">
+                <p>“Harvard University Wallpapers (20 Images).” WallpaperCat, wallpapercat.com/harvard-university-wallpapers.</p>
+                <a href="https://gsas.harvard.edu/office/admissions">Harvard Graduate Admissions</a>
+            </div>
+            <div class="card" id="NYU" style="display:none">
+                <h3>New York University</h3>
+                <h4>#6 in the U.S. for Education.</h4>
+                <p>Located in New York City, NYU has a multitude of opportunities and programs to explore!</p>
+                <img src="images/NYU.jpg" alt="A photo of NYU's Campus.">
+                <p>SchoolScoops. “NYU Tours: Private Campus Tours with NYU Students.” SchoolScoops, www.schoolscoops.com/p/new-york-university.</p>
+                <a href="https://www.nyu.edu/admissions/graduate-admissions.html">NYU Graduate Admissions</a>
+            </div>
+            <div class="card" id="columbia" style="display:none">
+                <h3>Columbia University</h3>
+                <h4>#6 in the U.S. for Education.</h4>
+                <p>Located in New York City, Columbia offers fresh, educational, and inspiring programs and organizations!</p>
+                <img src="images/columbia.jpg" alt="A photo of Columbia University's Campus.">
+                <p>“Columbia University Wallpapers.” Wallpapers.Com, wallpapers.com/columbia-university.</p>
+                <a href="https://www.gsas.columbia.edu/content/admissions">Columbia Graduate Admissions</a>
+            </div>
+            <div class="card" id="ucBerkeley" style="display:none">
+                <h3>University of California - Berkeley</h3>
+                <h4>#6 in the U.S. for Education.</h4>
+                <p>UC Berkeley is known for its beautiful location in Berkeley, California, and it is also known for its high graduate success rate!</p>
+                <img src="images/ucBerkeley.jpg" alt="A photo of UC Berkeley's Campus.">
+                <p>Kelly, John. “John Kelly, Attorney.” 2022, 1 Jan. 1970, blog.law-kelly.com/2022/.</p>
+                <a href="https://gradapp.berkeley.edu/apply/">UC Berkeley Graduate Admissions</a>
+            </div>
+            <div class="card" id="UCLA" style="display:none">
+                <h3>University of California - Los Angeles</h3>
+                <h4>#6 in the U.S. for Education.</h4>
+                <p>Located in Los Angeles, California, UCLA is an artsy but intellectual school!</p>
+                <img src="images/UCLA.jpg" alt="A photo of UCLA's Campus.">
+                <p>Best Colleges for Psychology Majors, www.thoughtco.com/best-colleges-for-psychology-majors-4843830.</p>
+                <a href="https://grad.ucla.edu/admissions/">UCLA Graduate Admissions</a>
+            </div>
+        </div>
+
+        <div class="localGrid">
+            <h2 id="local">Local 10</h2>
+            <div class="button-row" id="schools">
+                <button onclick="toggleCard('uwMadisonL')">UW-Madison</button>
+                <button onclick="toggleCard('northwesternL')">Northwestern</button>
+                <button onclick="toggleCard('umAnnArborL')">UM-Ann Arbor</button>
+                <button onclick="toggleCard('michiganStateL')">Michigan State</button>
+                <button onclick="toggleCard('umTwinCitiesL')">UM-Twin Cities</button>
+                <button onclick="toggleCard('uiUrbanaL')">University of Illinois - Urbana Champaign</button>
+                <button onclick="toggleCard('uiChicagoL')">University of Illinois - Chicago</button>
+                <button onclick="toggleCard('easternMichiganL')">Eastern Michigan</button>
+                <button onclick="toggleCard('illinoisStateL')">Illinois State</button>
+                <button onclick="toggleCard('carrollUL')">Carroll University</button>
+            </div>
+            <div class="card" id="uwMadisonL" style="display:none">
+                <h3>University of Wisconsin - Madison</h3>
+                <h4>#1 in the U.S. for Education.</h4>
+                <p>UW-Madison is part of the big 10 schools in America, and it offers a fun and enriching experience!</p>
+                <img src="images/uwMadison.jpg" alt="A photo of UW-Madison's Campus.">
+                <p>“University of Wisconsin–Madison Named an Innovation and Economic Prosperity University.” News, 15 Oct. 2025, news.wisc.edu/ university-of-wisconsin-madison-named-an-innovation-and-economic-prosperity-university/.</p>
+                <a href="https://gradapply.wisc.edu/apply/">UW-Madison Graduate Admissions</a>
+            </div>
+            <div class="card" id="northwesternL" style="display:none">
+                <h3>Northwestern University</h3>
+                <h4>#2 in the U.S. for Education.</h4>
+                <p>Located in Chicago, Illinois, Northwestern offers an urban, thrilling, and social graduate experience!</p>
+                <img src="images/northwestern.jpg" alt="A photo of Northwestern's Campus.">
+                <p>University Reviews Policies after Off-Campus Shooting - Northwestern Now, news.northwestern.edu/stories/2023/ 04/university-reviews-policies-after-off-campus-shooting.</p>
+                <a href="https://www.northwestern.edu/admissions/graduate-admissions.html">Northwestern Graduate Admissions</a>
+            </div>
+            <div class="card" id="umAnnArborL" style="display:none">
+                <h3>University of Michigan - Ann Arbor</h3>
+                <h4>#2 in the U.S. for Education.</h4>
+                <p>UM-Ann Arbor is a beautiful and historic college filled with bright and inquisitive students!</p>
+                <img src="images/umAnnArbor.jpg" alt="A photo of UM-Ann Arbor's Campus.">
+                <p>www.collegetuitioncompare.com/edu/ 170976/university-of-michigan-ann-arbor/.</p>
+                <a href="https://rackham.umich.edu/admissions/applying/">UM-Ann Arbor Graduate Admissions</a>
+            </div>
+            <div class="card" id="michiganStateL" style="display:none">
+                <h3>Michigan State University</h3>
+                <h4>#19 in the U.S. for Education.</h4>
+                <p>Michigan State is located in East Lansing, Michigan, and it offers a spirited and academic-centered lifestyle!</p>
+                <img src="images/michiganState.jpg" alt="A photo of Michigan State's Campus.">
+                <p>“Michigan State University: Lansing, MI.” Choose Lansing, www.lansing.org/michigan-state-university/.</p>
+                <a href="https://admissions.msu.edu/apply/graduate-students">Michigan State Graduate Admissions</a>
+            </div>
+            <div class="card" id="umTwinCitiesL" style="display:none">
+                <h3>University of Minnesota - Twin Cities</h3>
+                <h4>#26 in the U.S. for Education.</h4>
+                <p>UM-Twin Cities is a local, educational, and uplifting college located in Twin Cities, Minnesota.</p>
+                <img src="images/umTwinCities.jpg" alt="A photo of UM-Twin Cities's Campus.">
+                <p>“Visit the University of Minnesota Twin Cities.” Visit Us | University of Minnesota Twin Cities, admissions.tc.umn.edu/visit/visit-university-minnesota-twin-cities.</p>
+                <a href="https://grad.umn.edu/admissions">UM-Twin Cities Graduate Admissions</a>
+            </div>
+            <div class="card" id="uiUrbanaL" style="display:none">
+                <h3>University of Illinois - Urbana Champaign</h3>
+                <h4>#32 in the U.S. for Education.</h4>
+                <p>University of Illinois - Urbana Champaign is a top ranking school local to the midwest!</p>
+                <img src="images/uiUrbana.jpg" alt="A photo of University of Illinois - Urbana Champaign's Campus.">
+                <p>Castillo, Juan José Mendoza. “History of Programs at University of Illinois - Urbana Champaign.” Blog, 28 Mar. 2025, sabordavida.pt/ qual-e-a-historia-e-os-principais-programas-da-u-of-illinois-at-urbana-champaign/.</p>
+                <a href="https://grad.illinois.edu/admissions/apply-now">University of Illinois - Urbana Champaign Graduate Admissions</a>
+            </div>
+            <div class="card" id="uiChicagoL" style="display:none">
+                <h3>University of Illinois - Chicago</h3>
+                <h4>#64 in the U.S. for Education.</h4>
+                <p>Located in the heart of Chicago, Illinois, UIC combines city living with college life!</p>
+                <img src="images/uiChicago.jpg" alt="A photo of UIC's Campus.">
+                <p>“University of Illinois at Chicago (UIC) Department of Communication.” Communication Studies, 12 Sept. 2012, www.communicationstudies.com/ communication-colleges/ university-of-illinois-at-chicago-uic-department-of-communication.</p>
+                <a href="https://admissions.uic.edu/graduate-professional">UIC Graduate Admissions</a>
+            </div>
+            <div class="card" id="easternMichiganL" style="display:none">
+                <h3>Eastern Michigan University</h3>
+                <h4>#84 in the U.S. for Education.</h4>
+                <p>Located in Ypsilanti, Michigan, Eastern Michigan University is a unique choice for an incredible school!</p>
+                <img src="images/easternMichigan.jpg" alt="A photo of Eastern Michigan's Campus.">
+                <p>Campus Directory & Contact Info | Eastern Michigan University, www.emich.edu/directory/index.php.</p>
+                <a href="https://www.emich.edu/graduate/index.php">Eastern Michigan University Graduate Admissions</a>
+            </div>
+            <div class="card" id="illinoisStateL" style="display:none">
+                <h3>Illinois State University</h3>
+                <h4>#95 in the U.S. for Education.</h4>
+                <p>Illinois State is located in Normal, Illinois, and it offers a beyond normal education!</p>
+                <img src="images/illinoisState.jpg" alt="A photo of Illinois State's Campus.">
+                <p>“Illinois State University.” Illinois’ First Public University, 15 Oct. 2026, illinoisstate.edu/?preview=true&site_id=837.</p>
+                <a href="https://illinoisstate.edu/admissions/graduate/">Illinois State Graduate Admissions</a>
+            </div>
+            <div class="card" id="carrollUL" style="display:none">
+                <h3>Carroll University</h3>
+                <h4>Unranked in the U.S. for Education.</h4>
+                <p>Carroll University is located in Waukesha, Wisconsin, and it offers a challenging but rewarding education!</p>
+                <img src="images/carrollU.jpg" alt="A photo of Carroll University's Campus.">
+                <p>Facebook, www.facebook.com/carroll.university/.</p>
+                <a href="https://www.carrollu.edu/academics/graduate/">Carroll University Graduate Admissions</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

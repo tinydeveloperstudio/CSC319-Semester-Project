@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduate Schools Science</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Graduate Schools Comparison</h1>
+        <h2>Science</h2>
+
+        <nav id="studiesType">
+            <ul>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="math.html">Math</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="engineering.html">Engineering</a></li>
+                <li><a href="medicine.html">Medicine</a></li>
+                <li><a href="law.html">Law</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="art.html">Art</a></li>
+                <li><a href="computerScience.html">Computer Science</a></li>
+            </ul>
+        </nav>
+
+        <nav id="localOrTop">
+            <ul>
+                <li><a href="#top10">Top 10</a></li>
+                <li><a href="#local">Local 10</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="topGrid">
+            <h2 id="top10">Top 10</h2>
+            <div class="button-row" id="schools">
+                <button onclick="toggleCard('calTech')">CalTech</button>
+                <button onclick="toggleCard('MIT')">MIT</button>
+                <button onclick="toggleCard('ucBerkeley')">UC-Berkeley</button>
+                <button onclick="toggleCard('stanford')">Stanford</button>
+                <button onclick="toggleCard('princeton')">Princeton</button>
+                <button onclick="toggleCard('harvard')">Harvard</button>
+                <button onclick="toggleCard('uiUrbana')">University of Illinois - Urbana Champaign</button>
+                <button onclick="toggleCard('columbia')">Columbia</button>
+                <button onclick="toggleCard('yale')">Yale</button>
+                <button onclick="toggleCard('uChicago')">University of Chicago</button>
+            </div>
+            <div class="card" id="calTech" style="display:none">
+                <h3>California Institute of Technology</h3>
+                <h4>#1 in the U.S. for Chemistry, Earth Sciences, & Physics. #6 in the U.S. for Biological Sciences.</h4>
+                <p>Located in Pasadena, California, CalTech has a beautiful campus and lots of opportunities and organizations!</p>
+                <img src="images/calTech.jpg" alt="A photo of California Institute of Technology's Campus.">
+                <p>“Caltech Wallpapers.” Wallpapers.Com, wallpapers.com/caltech.</p>
+                <a href="https://www.gradoffice.caltech.edu/admissions">CalTech Graduate Admissions</a>
+            </div>
+            <div class="card" id="MIT" style="display:none">
+                <h3>Massachusetts Institute of Technology</h3>
+                <h4>#1 in the U.S. for Physics, Chemistry, & Biological Sciences. #4 in the U.S. for Earth Sciences.</h4>
+                <p>Located in Cambridge, Massachusetts, MIT has a nationally recognized level of excellence for science programs!</p>
+                <img src="images/MIT.jpg" alt="A photo of MIT's Campus.">
+                <p>“Massachusetts Institute of Technology.” Wikipedia, Wikimedia Foundation, 18 Oct. 2026, en.wikipedia.org /wiki/Wikipedia:GLAM/Massachusetts _Institute_of_Technology.</p>
+                <a href="https://oge.mit.edu/graduate-admissions/">MIT Graduate Admissions</a>
+            </div>
+            <div class="card" id="ucBerkeley" style="display:none">
+                <h3>University of California - Berkeley</h3>
+                <h4>#1 in the U.S. for Chemistry. #2 in the U.S. for Earth Sciences. #3 in the U.S. for Biological Sciences. #5 in the U.S. for Physics.</h4>
+                <p>UC Berkeley is known for its beautiful location in Berkeley, California, and it is also known for its high graduate success rate!</p>
+                <img src="images/ucBerkeley.jpg" alt="A photo of UC Berkeley's Campus.">
+                <p>Kelly, John. “John Kelly, Attorney.” 2022, 1 Jan. 1970, blog.law-kelly.com/2022/.</p>
+                <a href="https://gradapp.berkeley.edu/apply/">UC Berkeley Graduate Admissions</a>
+            </div>
+            <div class="card" id="stanford" style="display:none">
+                <h3>Stanford University</h3>
+                <h4>#3 in the U.S. for Earth Sciences & Biological Sciences. #4 in the U.S. for Chemistry. #5 in the U.S. for Physics.</h4>
+                <p>Stanford is located in the city of Palo Alto. It offers stunning views, stellar education, and opportunities of a lifetime!</p>
+                <img src="images/stanford.jpg" alt="A photo of Stanford's Campus.">
+                <p>“Stanford University Wallpapers - Wallpaper Cave.” WallpaperCave, wallpapercave.com/stanford-university-wallpapers.</p>
+                <a href="https://gradadmissions.stanford.edu">Stanford Graduate Admissions</a>
+            </div>
+            <div class="card" id="princeton" style="display:none">
+                <h3>Princeton University</h3>
+                <h4>#1 in the U.S. for Physics. #3 in the U.S. for Earth Sciences & Biological Sciences. #4 in the U.S. for Chemistry.</h4>
+                <p>Located in Princeton, New Jersey, Princeton offers a royal experience for student life and academics!</p>
+                <img src="images/princeton.jpg" alt="A photo of Princeton's Campus.">
+                <p>Princeton University Wallpapers - Top Free Princeton University Backgrounds - Wallpaperaccess, wallpaperaccess.com/princeton-university.</p>
+                <a href="https://www.princeton.edu/admission-aid/graduate-admission">Princeton Graduate Admissions</a>
+            </div>
+            <div class="card" id="harvard" style="display:none">
+                <h3>Harvard University</h3>
+                <h4>#3 in the U.S. for Biological Sciences. #4 in the U.S. for Chemistry. #5 in the U.S. for Physics. #9 in the U.S. for Earth Sciences.</h4>
+                <p>Located in Cambridge, Massachusetts, Harvard is one of the most notable schools in the United States!</p>
+                <img src="images/harvard.jpg" alt="A photo of Harvard's Campus.">
+                <p>“Harvard University Wallpapers (20 Images).” WallpaperCat, wallpapercat.com/harvard-university-wallpapers.</p>
+                <a href="https://gsas.harvard.edu/office/admissions">Harvard Graduate Admissions</a>
+            </div>
+            <div class="card" id="uiUrbana" style="display:none">
+                <h3>University of Illinois - Urbana Champaign</h3>
+                <h4>#8 in the U.S. for Physics. #9 in the U.S. for Chemistry. #12 in the U.S. for Biological Sciences.</h4>
+                <p>University of Illinois - Urbana Champaign is a top ranking school local to the midwest!</p>
+                <img src="images/uiUrbana.jpg" alt="A photo of University of Illinois - Urbana Champaign's Campus.">
+                <p>Castillo, Juan José Mendoza. “History of Programs at University of Illinois - Urbana Champaign.” Blog, 28 Mar. 2025, sabordavida.pt/ qual-e-a-historia-e-os-principais-programas-da-u-of-illinois-at-urbana-champaign/.</p>
+                <a href="https://grad.illinois.edu/admissions/apply-now">University of Illinois - Urbana Champaign Graduate Admissions</a>
+            </div>
+            <div class="card" id="columbia" style="display:none">
+                <h3>Columbia University</h3>
+                <h4>#8 in the U.S. for Physics. #11 in the U.S. for Chemistry.</h4>
+                <p>Located in New York City, Columbia offers fresh, educational, and inspiring programs and organizations!</p>
+                <img src="images/columbia.jpg" alt="A photo of Columbia University's Campus.">
+                <p>“Columbia University Wallpapers.” Wallpapers.Com, wallpapers.com/columbia-university.</p>
+                <a href="https://www.gsas.columbia.edu/content/admissions">Columbia Graduate Admissions</a>
+            </div>
+            <div class="card" id="yale" style="display:none">
+                <h3>Yale University</h3>
+                <h4>#12 in the U.S. for Physics. #11 in the U.S. for Chemistry & Earth Sciences. #12 in the U.S. for Biological Sciences.</h4>
+                <p>Located in New Haven, Conneticut, Yale offers a spririted, challenging, and rewarding educational experience!</p>
+                <img src="images/columbia.jpg" alt="A photo of Yale University's Campus.">
+                <p>“Yale Wallpapers on Wallpapersafari.” WallpaperSafari, wallpapersafari.com/yale-wallpapers/.</p>
+                <a href="https://gsas.yale.edu/admissions">Yale Graduate Admissions</a>
+            </div>
+            <div class="card" id="uChicago" style="display:none">
+                <h3>University of Chicago</h3>
+                <h4>#7 in the U.S. for Physics. #11 in the U.S. for Chemistry. #20 in the U.S. for Earth Sciences. #16 in the U.S. for Biological Sciences.</h4>
+                <p>Located in downtown Chicago, University of Chicago offers a savvy and supreme education!</p>
+                <img src="images/uChicago.jpg" alt="A photo of University of Chicago's Campus.">
+                <p>Smentkowski, Elena. “Illinois Licenses Are Set for Some Big Changes in 2025-Here’s What to Know.” Secret Chicago, 26 Feb. 2025, secretchicago.com/illinois-id-laws-2025/.</p>
+                <a href="https://grad.uchicago.edu">University of Chicago Graduate Admissions</a>
+            </div>
+        </div>
+
+        <div class="localGrid">
+            <h2 id="local">Local 10</h2>
+            <div class="button-row" id="schools">
+                <button onclick="toggleCard('uiUrbanaL')">University of Illinois - Urbana Champaign</button>
+                <button onclick="toggleCard('umAnnArborL')">UM-Ann Arbor</button>
+                <button onclick="toggleCard('uChicagoL')">University of Chicago</button>
+                <button onclick="toggleCard('uwMadisonL')">UW-Madison</button>
+                <button onclick="toggleCard('umTwinCitiesL')">UM-Twin Cities</button>
+                <button onclick="toggleCard('northwesternL')">Northwestern</button>
+                <button onclick="toggleCard('michiganStateL')">Michigan State</button>
+                <button onclick="toggleCard('uwMilwaukeeL')">UW-Milwaukee</button>
+                <button onclick="toggleCard('medCollegeWisL')">Medical College of Wisconsin</button>
+                <button onclick="toggleCard('marquetteL')">Marquette</button>
+            </div>
+            </script>
+            <div class="card" id="uiUrbanaL" style="display:none">
+                <h3>University of Illinois - Urbana Champaign</h3>
+                <h4>#8 in the U.S. for Physics. #9 in the U.S. for Chemistry. #12 in the U.S. for Biological Sciences.</h4>
+                <p>University of Illinois - Urbana Champaign is a top ranking school local to the midwest!</p>
+                <img src="images/uiUrbana.jpg" alt="A photo of University of Illinois - Urbana Champaign's Campus.">
+                <p>Castillo, Juan José Mendoza. “History of Programs at University of Illinois - Urbana Champaign.” Blog, 28 Mar. 2025, sabordavida.pt/ qual-e-a-historia-e-os-principais-programas-da-u-of-illinois-at-urbana-champaign/.</p>
+                <a href="https://grad.illinois.edu/admissions/apply-now">University of Illinois - Urbana Champaign Graduate Admissions</a>
+            </div>
+            <div class="card" id="umAnnArborL" style="display:none">
+                <h3>University of Michigan - Ann Arbor</h3>
+                <h4>#11 in the U.S. for Earth Sciences. #12 in the U.S. for Biological Sciences. #14 in the U.S. for Physics & Chemistry.</h4>
+                <p>UM-Ann Arbor is a beautiful and historic college filled with bright and inquisitive students!</p>
+                <img src="images/umAnnArbor.jpg" alt="A photo of UM-Ann Arbor's Campus.">
+                <p>www.collegetuitioncompare.com/edu/ 170976/university-of-michigan-ann-arbor/.</p>
+                <a href="https://rackham.umich.edu/admissions/applying/">UM-Ann Arbor Graduate Admissions</a>
+            </div>
+            <div class="card" id="uChicagoL" style="display:none">
+                <h3>University of Chicago</h3>
+                <h4>#7 in the U.S. for Physics. #11 in the U.S. for Chemistry. #20 in the U.S. for Earth Sciences. #16 in the U.S. for Biological Sciences.</h4>
+                <p>Located in downtown Chicago, University of Chicago offers a savvy and supreme education!</p>
+                <img src="images/uChicago.jpg" alt="A photo of University of Chicago's Campus.">
+                <p>Smentkowski, Elena. “Illinois Licenses Are Set for Some Big Changes in 2025-Here’s What to Know.” Secret Chicago, 26 Feb. 2025, secretchicago.com/illinois-id-laws-2025/.</p>
+                <a href="https://grad.uchicago.edu">University of Chicago Graduate Admissions</a>
+            </div>
+            <div class="card" id="uwMadisonL" style="display:none">
+                <h3>University of Wisconsin - Madison</h3>
+                <h4>#14 in the U.S. for Chemistry. #18 in the U.S. for Earth Sciences. #22 in the U.S. for Physics. #30 in the U.S. for Biological Sciences.</h4>
+                <p>UW-Madison is part of the big 10 schools in America, and it offers a fun and enriching experience!</p>
+                <img src="images/uwMadison.jpg" alt="A photo of UW-Madison's Campus.">
+                <p>“University of Wisconsin–Madison Named an Innovation and Economic Prosperity University.” News, 15 Oct. 2025, news.wisc.edu/ university-of-wisconsin-madison-named-an-innovation-and-economic-prosperity-university/.</p>
+                <a href="https://gradapply.wisc.edu/apply/">UW-Madison Graduate Admissions</a>
+            </div>
+            <div class="card" id="umTwinCitiesL" style="display:none">
+                <h3>University of Minnesota - Twin Cities</h3>
+                <h4>#28 in the U.S. for Physics. #25 in the U.S. for Earth Sciences. #22 in the U.S. for Chemistry. #35 in the U.S. for Biological Sciences.</h4>
+                <p>UM-Twin Cities is a local, educational, and uplifting college located in Twin Cities, Minnesota.</p>
+                <img src="images/umTwinCities.jpg" alt="A photo of UM-Twin Cities's Campus.">
+                <p>“Visit the University of Minnesota Twin Cities.” Visit Us | University of Minnesota Twin Cities, admissions.tc.umn.edu/visit/visit-university-minnesota-twin-cities.</p>
+                <a href="https://grad.umn.edu/admissions">UM-Twin Cities Graduate Admissions</a>
+            </div>
+            <div class="card" id="northwesternL" style="display:none">
+                <h3>Northwestern University</h3>
+                <h4>#7 in the U.S. for Chemistry. #22 in the U.S. for Physics. #40 in the U.S. for Earth Sciences. #41 in the U.S. for Biological Sciences.</h4>
+                <p>Located in Chicago, Illinois, Northwestern offers an urban, thrilling, and social graduate experience!</p>
+                <img src="images/northwestern.jpg" alt="A photo of Northwestern's Campus.">
+                <p>University Reviews Policies after Off-Campus Shooting - Northwestern Now, news.northwestern.edu/stories/2023/ 04/university-reviews-policies-after-off-campus-shooting.</p>
+                <a href="https://www.northwestern.edu/admissions/graduate-admissions.html">Northwestern Graduate Admissions</a>
+            </div>
+            <div class="card" id="michiganStateL" style="display:none">
+                <h3>Michigan State University</h3>
+                <h4>#34 in the U.S. for Physics. #43 in the U.S. for Chemistry. #50 in the U.S. for Biological Sciences. #55 in the U.S. for Earth Sciences.</h4>
+                <p>Michigan State is located in East Lansing, Michigan, and it offers a spirited and academic-centered lifestyle!</p>
+                <img src="images/michiganState.jpg" alt="A photo of Michigan State's Campus.">
+                <p>“Michigan State University: Lansing, MI.” Choose Lansing, www.lansing.org/michigan-state-university/.</p>
+                <a href="https://admissions.msu.edu/apply/graduate-students">Michigan State Graduate Admissions</a>
+            </div>
+            <div class="card" id="uwMilwaukeeL" style="display:none">
+                <h3>University of Wisconsin - Milwaukee</h3>
+                <h4>#97 in the U.S. for Physics. #114 in the U.S. for Chemistry. #135 in the U.S. for Biological Sciences. #149 in the U.S. for Earth Sciences.</h4>
+                <p>UW-Milwaukee offers a beautiful campus nestled in an urban environment!</p>
+                <img src="images/uwMilwaukee.jpg" alt="A photo of UW-Milwaukee's Campus.">
+                <p>Facebook, www.facebook.com/uwmstugov/.</p>
+                <a href="https://uwm.edu/graduateschool/students/admission/">UW-Milwaukee Graduate Admissions</a>
+            </div>
+            <div class="card" id="medCollegeWisL" style="display:none">
+                <h3>Medical College of Wisconsin</h3>
+                <h4>#128 in the U.S. for Biological Science.</h4>
+                <p>The Medical College of Wisconsin is located in Milwaukee, Wisconsin. With a wide variety of medical and scientific programs, students can enhance their career here!</p>
+                <img src="images/medCollegeWis.jpg" alt="A photo of Medical College of Wisconsin's Campus.">
+                <p>Photos & Videos | Newsroom | Medical College of Wisconsin, www.mcw.edu/newsroom/resources/ photos.</p>
+                <a href="https://www.mcw.edu/education/graduate-school">Medical College of Wisconsin Graduate Admissions</a>
+            </div>
+            <div class="card" id="marquetteL" style="display:none">
+                <h3>Marquette University</h3>
+                <h4>#135 in the U.S. for Chemistry.</h4>
+                <p>Marquette is located in the heart of downtown Milwaukee, Wisconsin. It offers a city experience while being local and close to home!</p>
+                <img src="images/marquette.jpg" alt="A photo of Marquette's Campus.">
+                <p>“Get Ready for AWARM Welcome.” Marquette University, www.marquette.edu/visit/.</p>
+                <a href="https://graduate.admissions.marquette.edu/apply/">Marquette Graduate Admissions</a>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
