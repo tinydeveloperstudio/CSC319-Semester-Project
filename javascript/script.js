@@ -45,7 +45,7 @@ function rankButton (event) {
     const item = document.createElement("li");
     rankingData.push(schoolName);
     save();
-};
+}
 
 document.querySelectorAll(".rankButton").forEach(button => {
     button.addEventListener("click", rankButton);
