@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graduate Schools Education</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="javascript/script.js"></script>
+    <script src="javascript/script.js" defer></script>
 </head>
 <body onload="cardStart()">
     <header>
@@ -55,6 +55,8 @@
                 <img src="images/uwMadison.jpg" alt="A photo of UW-Madison's Campus.">
                 <p>“University of Wisconsin–Madison Named an Innovation and Economic Prosperity University.” News, 15 Oct. 2025, news.wisc.edu/ university-of-wisconsin-madison-named-an-innovation-and-economic-prosperity-university/.</p>
                 <a href="https://gradapply.wisc.edu/apply/">UW-Madison Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
             <div class="card" id="northwestern" style="display:none">
                 <h3>Northwestern University</h3>
@@ -63,6 +65,8 @@
                 <img src="images/northwestern.jpg" alt="A photo of Northwestern's Campus.">
                 <p>University Reviews Policies after Off-Campus Shooting - Northwestern Now, news.northwestern.edu/stories/2023/ 04/university-reviews-policies-after-off-campus-shooting.</p>
                 <a href="https://www.northwestern.edu/admissions/graduate-admissions.html">Northwestern Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
             <div class="card" id="uFlorida" style="display:none">
                 <h3>University of Florida - Gainesville</h3>
@@ -71,6 +75,8 @@
                 <img src="images/uFlorida.jpg" alt="A photo of UF-Gainesville's Campus.">
                 <p>Costeines, Michael. “University of Florida Receives 5-Star Grade as One of America’s Best Colleges.” Florida’s Voice, 17 June 2024, flvoicenews.com/university-of-florida-receives-5-star-grade-as-one-of-americas-best-colleges/.</p>
                 <a href="https://admissions.ufl.edu/apply/graduate/">UF-Gainesville Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
             <div class="card" id="umAnnArbor" style="display:none">
                 <h3>University of Michigan - Ann Arbor</h3>
@@ -79,6 +85,8 @@
                 <img src="images/umAnnArbor.jpg" alt="A photo of UM-Ann Arbor's Campus.">
                 <p>www.collegetuitioncompare.com/edu/ 170976/university-of-michigan-ann-arbor/.</p>
                 <a href="https://rackham.umich.edu/admissions/applying/">UM-Ann Arbor Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
             <div class="card" id="vanderbilt" style="display:none">
                 <h3>Vanderbilt University</h3>
@@ -87,6 +95,8 @@
                 <img src="images/vanderbilt.jpg" alt="A photo of Vanderbilt's Campus.">
                 <p>Villet, Reagan. “Graduate Student Council Announces 2025 Anchor Award Winners.” Vanderbilt University, Vanderbilt University, 4 Dec. 1970, news.vanderbilt.edu/2025/12/04/ graduate-student-council-announces-2025-anchor-award-winners/.</p>
                 <a href="https://gradschool.vanderbilt.edu/admissions/apply/">Vanderbilt Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
             <div class="card" id="harvard" style="display:none">
                 <h3>Harvard University</h3>
@@ -95,6 +105,8 @@
                 <img src="images/harvard.jpg" alt="A photo of Harvard's Campus.">
                 <p>“Harvard University Wallpapers (20 Images).” WallpaperCat, wallpapercat.com/harvard-university-wallpapers.</p>
                 <a href="https://gsas.harvard.edu/office/admissions">Harvard Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
             <div class="card" id="NYU" style="display:none">
                 <h3>New York University</h3>
@@ -103,6 +115,8 @@
                 <img src="images/NYU.jpg" alt="A photo of NYU's Campus.">
                 <p>SchoolScoops. “NYU Tours: Private Campus Tours with NYU Students.” SchoolScoops, www.schoolscoops.com/p/new-york-university.</p>
                 <a href="https://www.nyu.edu/admissions/graduate-admissions.html">NYU Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
             <div class="card" id="columbia" style="display:none">
                 <h3>Columbia University</h3>
@@ -111,6 +125,8 @@
                 <img src="images/columbia.jpg" alt="A photo of Columbia University's Campus.">
                 <p>“Columbia University Wallpapers.” Wallpapers.Com, wallpapers.com/columbia-university.</p>
                 <a href="https://www.gsas.columbia.edu/content/admissions">Columbia Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
             <div class="card" id="ucBerkeley" style="display:none">
                 <h3>University of California - Berkeley</h3>
@@ -119,6 +135,8 @@
                 <img src="images/ucBerkeley.jpg" alt="A photo of UC Berkeley's Campus.">
                 <p>Kelly, John. “John Kelly, Attorney.” 2022, 1 Jan. 1970, blog.law-kelly.com/2022/.</p>
                 <a href="https://gradapp.berkeley.edu/apply/">UC Berkeley Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
             <div class="card" id="UCLA" style="display:none">
                 <h3>University of California - Los Angeles</h3>
@@ -127,6 +145,8 @@
                 <img src="images/UCLA.jpg" alt="A photo of UCLA's Campus.">
                 <p>Best Colleges for Psychology Majors, www.thoughtco.com/best-colleges-for-psychology-majors-4843830.</p>
                 <a href="https://grad.ucla.edu/admissions/">UCLA Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
         </div>
 
@@ -138,8 +158,8 @@
                 <button onclick="toggleCard('umAnnArborL')">UM-Ann Arbor</button>
                 <button onclick="toggleCard('michiganStateL')">Michigan State</button>
                 <button onclick="toggleCard('umTwinCitiesL')">UM-Twin Cities</button>
-                <button onclick="toggleCard('uiUrbanaL')">University of Illinois - Urbana Champaign</button>
-                <button onclick="toggleCard('uiChicagoL')">University of Illinois - Chicago</button>
+                <button onclick="toggleCard('uiUrbanaL')">UIUC</button>
+                <button onclick="toggleCard('uiChicagoL')">UIC</button>
                 <button onclick="toggleCard('easternMichiganL')">Eastern Michigan</button>
                 <button onclick="toggleCard('illinoisStateL')">Illinois State</button>
                 <button onclick="toggleCard('carrollUL')">Carroll University</button>
@@ -151,6 +171,8 @@
                 <img src="images/uwMadison.jpg" alt="A photo of UW-Madison's Campus.">
                 <p>“University of Wisconsin–Madison Named an Innovation and Economic Prosperity University.” News, 15 Oct. 2025, news.wisc.edu/ university-of-wisconsin-madison-named-an-innovation-and-economic-prosperity-university/.</p>
                 <a href="https://gradapply.wisc.edu/apply/">UW-Madison Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
             <div class="card" id="northwesternL" style="display:none">
                 <h3>Northwestern University</h3>
@@ -159,6 +181,8 @@
                 <img src="images/northwestern.jpg" alt="A photo of Northwestern's Campus.">
                 <p>University Reviews Policies after Off-Campus Shooting - Northwestern Now, news.northwestern.edu/stories/2023/ 04/university-reviews-policies-after-off-campus-shooting.</p>
                 <a href="https://www.northwestern.edu/admissions/graduate-admissions.html">Northwestern Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
             <div class="card" id="umAnnArborL" style="display:none">
                 <h3>University of Michigan - Ann Arbor</h3>
@@ -167,6 +191,8 @@
                 <img src="images/umAnnArbor.jpg" alt="A photo of UM-Ann Arbor's Campus.">
                 <p>www.collegetuitioncompare.com/edu/ 170976/university-of-michigan-ann-arbor/.</p>
                 <a href="https://rackham.umich.edu/admissions/applying/">UM-Ann Arbor Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
             <div class="card" id="michiganStateL" style="display:none">
                 <h3>Michigan State University</h3>
@@ -175,6 +201,8 @@
                 <img src="images/michiganState.jpg" alt="A photo of Michigan State's Campus.">
                 <p>“Michigan State University: Lansing, MI.” Choose Lansing, www.lansing.org/michigan-state-university/.</p>
                 <a href="https://admissions.msu.edu/apply/graduate-students">Michigan State Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
             <div class="card" id="umTwinCitiesL" style="display:none">
                 <h3>University of Minnesota - Twin Cities</h3>
@@ -183,6 +211,8 @@
                 <img src="images/umTwinCities.jpg" alt="A photo of UM-Twin Cities's Campus.">
                 <p>“Visit the University of Minnesota Twin Cities.” Visit Us | University of Minnesota Twin Cities, admissions.tc.umn.edu/visit/visit-university-minnesota-twin-cities.</p>
                 <a href="https://grad.umn.edu/admissions">UM-Twin Cities Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
             <div class="card" id="uiUrbanaL" style="display:none">
                 <h3>University of Illinois - Urbana Champaign</h3>
@@ -191,6 +221,8 @@
                 <img src="images/uiUrbana.jpg" alt="A photo of University of Illinois - Urbana Champaign's Campus.">
                 <p>Castillo, Juan José Mendoza. “History of Programs at University of Illinois - Urbana Champaign.” Blog, 28 Mar. 2025, sabordavida.pt/ qual-e-a-historia-e-os-principais-programas-da-u-of-illinois-at-urbana-champaign/.</p>
                 <a href="https://grad.illinois.edu/admissions/apply-now">University of Illinois - Urbana Champaign Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
             <div class="card" id="uiChicagoL" style="display:none">
                 <h3>University of Illinois - Chicago</h3>
@@ -199,6 +231,8 @@
                 <img src="images/uiChicago.jpg" alt="A photo of UIC's Campus.">
                 <p>“University of Illinois at Chicago (UIC) Department of Communication.” Communication Studies, 12 Sept. 2012, www.communicationstudies.com/ communication-colleges/ university-of-illinois-at-chicago-uic-department-of-communication.</p>
                 <a href="https://admissions.uic.edu/graduate-professional">UIC Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
             <div class="card" id="easternMichiganL" style="display:none">
                 <h3>Eastern Michigan University</h3>
@@ -207,6 +241,8 @@
                 <img src="images/easternMichigan.jpg" alt="A photo of Eastern Michigan's Campus.">
                 <p>Campus Directory & Contact Info | Eastern Michigan University, www.emich.edu/directory/index.php.</p>
                 <a href="https://www.emich.edu/graduate/index.php">Eastern Michigan University Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
             <div class="card" id="illinoisStateL" style="display:none">
                 <h3>Illinois State University</h3>
@@ -215,6 +251,8 @@
                 <img src="images/illinoisState.jpg" alt="A photo of Illinois State's Campus.">
                 <p>“Illinois State University.” Illinois’ First Public University, 15 Oct. 2026, illinoisstate.edu/?preview=true&site_id=837.</p>
                 <a href="https://illinoisstate.edu/admissions/graduate/">Illinois State Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
             <div class="card" id="carrollUL" style="display:none">
                 <h3>Carroll University</h3>
@@ -223,11 +261,13 @@
                 <img src="images/carrollU.jpg" alt="A photo of Carroll University's Campus.">
                 <p>Facebook, www.facebook.com/carroll.university/.</p>
                 <a href="https://www.carrollu.edu/academics/graduate/">Carroll University Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
         </div>
     </main>
     <footer>
-
+        <ol id="rankingList"></ol>
     </footer>
     
 </body>

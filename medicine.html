@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graduate Schools Medicine</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="javascript/script.js"></script>
+    <script src="javascript/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -35,73 +35,239 @@
     </header>
     <main>
         <div class="topGrid">
-            <div class="card" style="display:none">
-
+            <h2 id="top10">Top 10</h2>
+            <div class="button-row" id="schools">
+                <button onclick="toggleCard('dartmouth')">Dartmouth</button>
+                <button onclick="toggleCard('easternCarolina')">ECU</button>
+                <button onclick="toggleCard('uwMadison')">UW-Madison</button>
+                <button onclick="toggleCard('umTwinCities')">UM-Twin Cities</button>
+                <button onclick="toggleCard('ucSanDiego')">UC-San Diego</button>
+                <button onclick="toggleCard('ucSanFrancisco')">UC-San Francisco</button>
+                <button onclick="toggleCard('ucDavis')">UC-Davis</button>
+                <button onclick="toggleCard('kumc')">KUMC</button>
+                <button onclick="toggleCard('uhManoa')">UH-Manoa</button>
+                <button onclick="toggleCard('saintLouisU')">SLU</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="dartmouth" style="display:none">
+                <h3>Dartmouth College</h3>
+                <h4>Tier 1 rank in the U.S. for Medicine.</h4>
+                <p>Located in Hanover, New Hampshire, Dartmouth offers an ivy league experience!</p>
+                <img src="images/dartmouth.jpg" alt="A photo of Dartmouth's Campus.">
+                <p>File:Dartmouth College Campus 2007-10-20 10.JPG - Wikimedia Commons, commons.wikimedia.org/wiki/File: Dartmouth_College_campus_2007-10-20_10.JPG.</p>
+                <a href="https://graduate.dartmouth.edu/admissions/applying-dartmouth">Dartmouth Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="easternCarolina" style="display:none">
+                <h3>Eastern Carolina University</h3>
+                <h4>Tier 1 rank in the U.S. for Medicine.</h4>
+                <p>Located in Greenville, North Carolina, ECU has a beautiful campus and lovely community!</p>
+                <img src="images/ecu.jpg" alt="A photo of Eastern Carolina's Campus.">
+                <p>Hoard, Brent. “East Carolina University - Grad Admissions Office.” Flickr, Yahoo!, 16 Nov. 2026, www.flickr.com/photos/bhoard/3695064960.</p>
+                <a href="https://gradschool.ecu.edu/admissions/">Eastern Carolina Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="uwMadison" style="display:none">
+                <h3>University of Wisconsin - Madison</h3>
+                <h4>Tier 1 rank in the U.S. for Medicine.</h4>
+                <p>UW-Madison is part of the big 10 schools in America, and it offers a fun and enriching experience!</p>
+                <img src="images/uwMadison.jpg" alt="A photo of UW-Madison's Campus.">
+                <p>“University of Wisconsin–Madison Named an Innovation and Economic Prosperity University.” News, 15 Oct. 2025, news.wisc.edu/ university-of-wisconsin-madison-named-an-innovation-and-economic-prosperity-university/.</p>
+                <a href="https://gradapply.wisc.edu/apply/">UW-Madison Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="umTwinCities" style="display:none">
+                <h3>University of Minnesota - Twin Cities</h3>
+                <h4>Tier 1 rank in the U.S. for Medicine.</h4>
+                <p>UM-Twin Cities is a local, educational, and uplifting college located in Twin Cities, Minnesota.</p>
+                <img src="images/umTwinCities.jpg" alt="A photo of UM-Twin Cities's Campus.">
+                <p>“Visit the University of Minnesota Twin Cities.” Visit Us | University of Minnesota Twin Cities, admissions.tc.umn.edu/visit/visit-university-minnesota-twin-cities.</p>
+                <a href="https://grad.umn.edu/admissions">UM-Twin Cities Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="ucSanDiego" style="display:none">
+                <h3>University of California - San Diego</h3>
+                <h4>Tier 1 rank in the U.S. for Medicine.</h4>
+                <p>UC-San Diego is known for its beautiful location in La Jolla, California, and it is also known for its high graduate success rate!</p>
+                <img src="images/ucSanDiego.jpg" alt="A photo of UC San Diego's Campus.">
+                <p>“UC San Diego Campus Highlights.” California.Com, www.california.com/uc-san-diego-campus-highlights/</p>
+                <a href="https://connect.grad.ucsd.edu/apply/">UC San Diego Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="ucSanFrancisco" style="display:none">
+                <h3>University of California - San Francisco</h3>
+                <h4>Tier 1 rank in the U.S. for Medicine.</h4>
+                <p>Located in San Francisco, California, UC-San Francisco offers top tier education and a beautiful location!</p>
+                <img src="images/ucSanFrancisco.jpg" alt="A photo of UC-San Fransico's Campus.">
+                <p>“University of California, San Francisco.” Wikipedia, Wikimedia Foundation, 7 Nov. 2026, en.wikipedia.org/wiki/University_of_ California,_San_Francisco.</p>
+                <a href="https://graduate.ucsf.edu/admission">UC-San Francisco Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="ucDavis" style="display:none">
+                <h3>University of California - Davis</h3>
+                <h4>Tier 1 rank in the U.S. for Medicine.</h4>
+                <p>Located in Davis, California, UC-Davis is artsy, scientific, and fun!</p>
+                <img src="images/ucDavis.jpg" alt="A photo of UC-Davis's Campus.">
+                <p>“UC Davis Achieves Comprehensive Excellence in Rankings, Fundraising, and Sustainability.” Forward Pathway, 8 July 2025, www.forwardpathway.us/uc-davis-achieves-comprehensive-excellence-in-rankings-fundraising-and-sustainability.</p>
+                <a href="https://www.ucdavis.edu/admissions/graduate-school">UC-Davis Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="kumc" style="display:none">
+                <h3>University of Kansas Medical Center</h3>
+                <h4>Tier 1 rank in the U.S. for Medicine.</h4>
+                <p>Located in Kansas City, Kansas, KUMC is a cutting edge medical school!</p>
+                <img src="images/ukmc.jpg" alt="A photo of University of Kansas Medical Center's Campus.">
+                <p>“University of Kansas School of Medicine.” Wikipedia, Wikimedia Foundation, 9 Aug. 2026, en.wikipedia.org/wiki/University_of _Kansas_School_of_Medicine.</p>
+                <a href="https://www.kumc.edu/academic-and-student-affairs/departments/graduate-studies/for-students/admission.html">UK Medical Center Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="uhManoa" style="display:none">
+                <h3>University of Hawaii - Manoa</h3>
+                <h4>Tier 1 rank in the U.S. for Medicine.</h4>
+                <p>Located in Manoa, Hawaii, UH-Manoa has a rewarding program located near the ocean!</p>
+                <img src="images/uhManoa.jpg" alt="A photo of University of Hawaii - Manoa's Campus.">
+                <p>“University of Hawaii (Manoa), Oahu, Hawaii (4).” Flickr, Yahoo!, 16 Nov. 2026, www.flickr.com/photos/kenlund/4549734 021/.</p>
+                <a href="https://manoa.hawaii.edu/graduate/submitting-your-application/">UH-Manoa Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
+            </div>
+            <div class="card" id="saintLouisU" style="display:none">
+                <h3>Saint Louis University</h3>
+                <h4>Tier 1 rank in the U.S. for Medicine.</h4>
+                <p>Located in Saint Louis, Missouri, SLU is a top tier college with a vibrant community!</p>
+                <img src="images/slu.jpg" alt="A photo of Saint Louis University's Campus.">
+                <p>“Saint Louis University.” Wikipedia, Wikimedia Foundation, 30 Aug. 2026, de.wikipedia.org/wiki/Saint_Louis _University.</p>
+                <a href="https://www.slu.edu/admission/graduate/index.php">SLU Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
         </div>
 
         <div class="localGrid">
-            <div class="card" style="display:none">
-
+            <h2 id="local">Local 10</h2>
+            <div class="button-row" id="schools">
+                <button onclick="toggleCard('uwMadisonL')">UW-Madison</button>
+                <button onclick="toggleCard('umTwinCitiesL')">UM-Twin Cities</button>
+                <button onclick="toggleCard('michiganStateL')">Michigan State</button>
+                <button onclick="toggleCard('uicL')">UIC</button>
+                <button onclick="toggleCard('uwMilwaukeeL')">UW-Milwaukee</button>
+                <button onclick="toggleCard('carrollUL')">Carroll University</button>
+                <button onclick="toggleCard('loyolaL')">Loyola</button>
+                <button onclick="toggleCard('uChicagoL')">UChicago</button>
+                <button onclick="toggleCard('northwesternL')">Northwestern</button>
+                <button onclick="toggleCard('medCollegeWisL')">Medical College of Wisconsin</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="uwMadisonL" style="display:none">
+                <h3>University of Wisconsin - Madison</h3>
+                <h4>Tier 1 rank in the U.S. for Medicine.</h4>
+                <p>UW-Madison is part of the big 10 schools in America, and it offers a fun and enriching experience!</p>
+                <img src="images/uwMadison.jpg" alt="A photo of UW-Madison's Campus.">
+                <p>“University of Wisconsin–Madison Named an Innovation and Economic Prosperity University.” News, 15 Oct. 2025, news.wisc.edu/ university-of-wisconsin-madison-named-an-innovation-and-economic-prosperity-university/.</p>
+                <a href="https://gradapply.wisc.edu/apply/">UW-Madison Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="umTwinCitiesL" style="display:none">
+                <h3>University of Minnesota - Twin Cities</h3>
+                <h4>Tier 1 rank in the U.S. for Medicine.</h4>
+                <p>UM-Twin Cities is a local, educational, and uplifting college located in Twin Cities, Minnesota.</p>
+                <img src="images/umTwinCities.jpg" alt="A photo of UM-Twin Cities's Campus.">
+                <p>“Visit the University of Minnesota Twin Cities.” Visit Us | University of Minnesota Twin Cities, admissions.tc.umn.edu/visit/visit-university-minnesota-twin-cities.</p>
+                <a href="https://grad.umn.edu/admissions">UM-Twin Cities Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="michiganStateL" style="display:none">
+                <h3>Michigan State University</h3>
+                <h4>Tier 2 rank in the U.S. for Medicine.</h4>
+                <p>Michigan State is located in East Lansing, Michigan, and it offers a spirited and academic-centered lifestyle!</p>
+                <img src="images/michiganState.jpg" alt="A photo of Michigan State's Campus.">
+                <p>“Michigan State University: Lansing, MI.” Choose Lansing, www.lansing.org/michigan-state-university/.</p>
+                <a href="https://admissions.msu.edu/apply/graduate-students">Michigan State Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="uicL" style="display:none">
+                <h3>University of Illinois - Chicago</h3>
+                <h4>Tier 2 rank for Medicine.</h4>
+                <p>Located in Chicago, UIC offers a downtown experience that is rewarding!</p>
+                <img src="images/uic.jpg" alt="A photo of UIC's Campus.">
+                <p>“University of Illinois.” Wikipedia, Wikimedia Foundation, 6 May 2025, no.wikipedia.org/wiki/University_of _Illinois.</p>
+                <a href="https://grad.uchicago.eduhttps://admissions.uic.edu/graduate-professional">UIC Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="uwMilwaukeeL" style="display:none">
+                <h3>University of Wisconsin - Milwaukee</h3>
+                <h4>Unranked in the U.S. for Medicine.</h4>
+                <p>UW-Milwaukee offers a beautiful campus nestled in an urban environment!</p>
+                <img src="images/uwMilwaukee.jpg" alt="A photo of UW-Milwaukee's Campus.">
+                <p>Facebook, www.facebook.com/uwmstugov/.</p>
+                <a href="https://uwm.edu/graduateschool/students/admission/">UW-Milwaukee Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="carrollUL" style="display:none">
+                <h3>Carroll University</h3>
+                <h4>Unranked in the U.S. for Medicine.</h4>
+                <p>Carroll University is located in Waukesha, Wisconsin, and it offers a challenging but rewarding education!</p>
+                <img src="images/carrollU.jpg" alt="A photo of Carroll University's Campus.">
+                <p>Facebook, www.facebook.com/carroll.university/.</p>
+                <a href="https://www.carrollu.edu/academics/graduate/">Carroll University Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="loyolaL" style="display:none">
+                <h3>Loyola University - Chicago</h3>
+                <h4>Unranked in the U.S. for Medicine.</h4>
+                <p>Loyola University is located in Chicago,  Illinois, and it offers an experience of a lifetime!</p>
+                <img src="images/loyola.jpg" alt="A photo of Carroll University's Campus.">
+                <p>“Loyola University Chicago.” Wikipedia, Wikimedia Foundation, 10 Oct. 2026, en.wikipedia.org/wiki/Loyola_University _Chicago.</p>
+                <a href="https://www.luc.edu/gradschool/">Loyola Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="uChicagoL" style="display:none">
+                <h3>University of Chicago</h3>
+                <h4>Unranked in the U.S. for Medicine.</h4>
+                <p>Located in downtown Chicago, University of Chicago offers a savvy and supreme education!</p>
+                <img src="images/uChicago.jpg" alt="A photo of University of Chicago's Campus.">
+                <p>Smentkowski, Elena. “Illinois Licenses Are Set for Some Big Changes in 2025-Here’s What to Know.” Secret Chicago, 26 Feb. 2025, secretchicago.com/illinois-id-laws-2025/.</p>
+                <a href="https://grad.uchicago.edu">University of Chicago Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="northwesternL" style="display:none">
+                <h3>Northwestern University</h3>
+                <h4>Unranked in the U.S. for Education.</h4>
+                <p>Located in Chicago, Illinois, Northwestern offers an urban, thrilling, and social graduate experience!</p>
+                <img src="images/northwestern.jpg" alt="A photo of Northwestern's Campus.">
+                <p>University Reviews Policies after Off-Campus Shooting - Northwestern Now, news.northwestern.edu/stories/2023/ 04/university-reviews-policies-after-off-campus-shooting.</p>
+                <a href="https://www.northwestern.edu/admissions/graduate-admissions.html">Northwestern Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
+            </div>
+            <div class="card" id="medCollegeWisL" style="display:none">
+                <h3>Medical College of Wisconsin</h3>
+                <h4>Unranked in the U.S. for Medicine.</h4>
+                <p>The Medical College of Wisconsin is located in Milwaukee, Wisconsin. With a wide variety of medical and scientific programs, students can enhance their career here!</p>
+                <img src="images/medCollegeWis.jpg" alt="A photo of Medical College of Wisconsin's Campus.">
+                <p>Photos & Videos | Newsroom | Medical College of Wisconsin, www.mcw.edu/newsroom/resources/ photos.</p>
+                <a href="https://www.mcw.edu/education/graduate-school">Medical College of Wisconsin Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
         </div>
     </main>
     <footer>
-
+        <ol id="rankingList"></ol>
     </footer>
     
 </body>

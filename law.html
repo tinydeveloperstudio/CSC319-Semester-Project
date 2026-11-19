@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graduate Schools Law</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="javascript/script.js"></script>
+    <script src="javascript/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -35,73 +35,239 @@
     </header>
     <main>
         <div class="topGrid">
-            <div class="card" style="display:none">
-
+            <h2 id="top10">Top 10</h2>
+            <div class="button-row" id="schools">
+                <button onclick="toggleCard('stanford')">Stanford</button>
+                <button onclick="toggleCard('uChicago')">UChicago</button>
+                <button onclick="toggleCard('yale')">Yale</button>
+                <button onclick="toggleCard('uPenn')">UPenn</button>
+                <button onclick="toggleCard('uVirginia')">UVA</button>
+                <button onclick="toggleCard('harvard')">Harvard</button>
+                <button onclick="toggleCard('duke')">Duke</button>
+                <button onclick="toggleCard('NYU')">NYU</button>
+                <button onclick="toggleCard('columbia')">Columbia</button>
+                <button onclick="toggleCard('northwestern')">Northwestern</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="stanford" style="display:none">
+                <h3>Stanford University</h3>
+                <h4>#1 in the U.S. for Law.</h4>
+                <p>Stanford is located in the city of Palo Alto. It offers stunning views, stellar education, and opportunities of a lifetime!</p>
+                <img src="images/stanford.jpg" alt="A photo of Stanford's Campus.">
+                <p>“Stanford University Wallpapers - Wallpaper Cave.” WallpaperCave, wallpapercave.com/stanford-university-wallpapers.</p>
+                <a href="https://gradadmissions.stanford.edu">Stanford Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="uChicago" style="display:none">
+                <h3>University of Chicago</h3>
+                <h4>#2 in the U.S. for Law.</h4>
+                <p>Located in Chicago, University of Chicago offers a savvy and supreme education!</p>
+                <img src="images/uChicago.jpg" alt="A photo of University of Chicago's Campus.">
+                <p>Smentkowski, Elena. “Illinois Licenses Are Set for Some Big Changes in 2025-Here’s What to Know.” Secret Chicago, 26 Feb. 2025, secretchicago.com/illinois-id-laws-2025/.</p>
+                <a href="https://grad.uchicago.edu">University of Chicago Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="yale" style="display:none">
+                <h3>Yale University</h3>
+                <h4>#2 in the U.S. for Law.</h4>
+                <p>Located in New Haven, Conneticut, Yale offers a spririted, challenging, and rewarding educational experience!</p>
+                <img src="images/yale.jpg" alt="A photo of Yale University's Campus.">
+                <p>“Yale Wallpapers on Wallpapersafari.” WallpaperSafari, wallpapersafari.com/yale-wallpapers/.</p>
+                <a href="https://gsas.yale.edu/admissions">Yale Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="uPenn" style="display:none">
+                <h3>University of Pennsylvania - Philadelphia</h3>
+                <h4>#4 in the U.S. for Law.</h4>
+                <p>Located in Philadelphia, Pennsylvania, UPenn has a unique campus with many options for extracurriculars!</p>
+                <img src="images/uPenn.jpg" alt="A photo of University of Pennsylvania's Campus.">
+                <p>“University of Pennsylvania.” Wikipedia, Wikimedia Foundation, 30 Sept. 2025, sv.wikipedia.org/wiki/University_of _Pennsylvania.</p>
+                <a href="https://provost.upenn.edu/for-students/graduate-and-professional-education/graduate-admissions/">UPenn Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="uVirginia" style="display:none">
+                <h3>University of Virginia</h3>
+                <h4>#4 in the U.S. for Law.</h4>
+                <p>University of Virginia is located in Charlottesville, Virginia, and it features a beautiful campus with an engaging student life!</p>
+                <img src="images/uVirginia.jpg" alt="A photo of University of Virginia's Campus.">
+                <p>slack12. “Uva Sunrise #2.” Flickr, Yahoo!, 17 Nov. 2026, www.flickr.com/photos/slack12/3375469 663.</p>
+                <a href="https://www.virginia.edu/graduate-admission/">UVA Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="harvard" style="display:none">
+                <h3>Harvard University</h3>
+                <h4>#6 in the U.S. for Law.</h4>
+                <p>Located in Cambridge, Massachusetts, Harvard is one of the most notable schools in the United States!</p>
+                <img src="images/harvard.jpg" alt="A photo of Harvard's Campus.">
+                <p>“Harvard University Wallpapers (20 Images).” WallpaperCat, wallpapercat.com/harvard-university-wallpapers.</p>
+                <a href="https://gsas.harvard.edu/office/admissions">Harvard Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="duke" style="display:none">
+                <h3>Duke University</h3>
+                <h4>#7 in the U.S. for Law.</h4>
+                <p>Located in Durham, North Carolina, Duke is notable for its rigorous program and lively sports scene!</p>
+                <img src="images/duke.jpg" alt="A photo of Duke's Campus.">
+                <p>File:Duke University 08.Jpg - Wikimedia Commons, commons.wikimedia.org/wiki/File:Duke _University_08.jpg.</p>
+                <a href="https://gradschool.duke.edu/admissions/">Duke Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="NYU" style="display:none">
+                <h3>New York University</h3>
+                <h4>#8 in the U.S. for Law.</h4>
+                <p>Located in New York City, NYU has a multitude of opportunities and programs to explore!</p>
+                <img src="images/NYU.jpg" alt="A photo of NYU's Campus.">
+                <p>SchoolScoops. “NYU Tours: Private Campus Tours with NYU Students.” SchoolScoops, www.schoolscoops.com/p/new-york-university.</p>
+                <a href="https://www.nyu.edu/admissions/graduate-admissions.html">NYU Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="columbia" style="display:none">
+                <h3>Columbia University</h3>
+                <h4>#9 in the U.S. for Law.</h4>
+                <p>Located in New York City, Columbia offers fresh, educational, and inspiring programs and organizations!</p>
+                <img src="images/columbia.jpg" alt="A photo of Columbia University's Campus.">
+                <p>“Columbia University Wallpapers.” Wallpapers.Com, wallpapers.com/columbia-university.</p>
+                <a href="https://www.gsas.columbia.edu/content/admissions">Columbia Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
+            </div>
+            <div class="card" id="northwestern" style="display:none">
+                <h3>Northwestern University</h3>
+                <h4>#9 in the U.S. for Law.</h4>
+                <p>Located in Chicago, Illinois, Northwestern offers an urban, thrilling, and social graduate experience!</p>
+                <img src="images/northwestern.jpg" alt="A photo of Northwestern's Campus.">
+                <p>University Reviews Policies after Off-Campus Shooting - Northwestern Now, news.northwestern.edu/stories/2023/ 04/university-reviews-policies-after-off-campus-shooting.</p>
+                <a href="https://www.northwestern.edu/admissions/graduate-admissions.html">Northwestern Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
         </div>
 
         <div class="localGrid">
-            <div class="card" style="display:none">
-
+            <h2 id="local">Local 10</h2>
+            <div class="button-row" id="schools">
+                <button onclick="toggleCard('uChicagoL')">UChicago</button>
+                <button onclick="toggleCard('northwesternL')">Northwestern</button>
+                <button onclick="toggleCard('umTwinCitiesL')">UM-Twin Cities</button>
+                <button onclick="toggleCard('uwMadisonL')">UW-Madison</button>
+                <button onclick="toggleCard('uiUrbanaL')">UIUC</button>
+                <button onclick="toggleCard('marquetteL')">Marquette</button>
+                <button onclick="toggleCard('wayneStateL')">Wayne State</button>
+                <button onclick="toggleCard('uStThomasL')">UStThomas</button>
+                <button onclick="toggleCard('michiganStateL')">Michigan State</button>
+                <button onclick="toggleCard('huL')">Hamline</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="uChicagoL" style="display:none">
+                <h3>University of Chicago</h3>
+                <h4>#2 in the U.S. for Law.</h4>
+                <p>Located in Chicago, University of Chicago offers a savvy and supreme education!</p>
+                <img src="images/uChicago.jpg" alt="A photo of University of Chicago's Campus.">
+                <p>Smentkowski, Elena. “Illinois Licenses Are Set for Some Big Changes in 2025-Here’s What to Know.” Secret Chicago, 26 Feb. 2025, secretchicago.com/illinois-id-laws-2025/.</p>
+                <a href="https://grad.uchicago.edu">University of Chicago Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="northwesternL" style="display:none">
+                <h3>Northwestern University</h3>
+                <h4>#9 in the U.S. for Law.</h4>
+                <p>Located in Chicago, Illinois, Northwestern offers an urban, thrilling, and social graduate experience!</p>
+                <img src="images/northwestern.jpg" alt="A photo of Northwestern's Campus.">
+                <p>University Reviews Policies after Off-Campus Shooting - Northwestern Now, news.northwestern.edu/stories/2023/ 04/university-reviews-policies-after-off-campus-shooting.</p>
+                <a href="https://www.northwestern.edu/admissions/graduate-admissions.html">Northwestern Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="umTwinCitiesL" style="display:none">
+                <h3>University of Minnesota - Twin Cities</h3>
+                <h4>#22 in the U.S. for Law.</h4>
+                <p>UM-Twin Cities is a local, educational, and uplifting college located in Twin Cities, Minnesota.</p>
+                <img src="images/umTwinCities.jpg" alt="A photo of UM-Twin Cities's Campus.">
+                <p>“Visit the University of Minnesota Twin Cities.” Visit Us | University of Minnesota Twin Cities, admissions.tc.umn.edu/visit/visit-university-minnesota-twin-cities.</p>
+                <a href="https://grad.umn.edu/admissions">UM-Twin Cities Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="uwMadisonL" style="display:none">
+                <h3>University of Wisconsin - Madison</h3>
+                <h4>#26 in the U.S. for Law.</h4>
+                <p>UW-Madison is part of the big 10 schools in America, and it offers a fun and enriching experience!</p>
+                <img src="images/uwMadison.jpg" alt="A photo of UW-Madison's Campus.">
+                <p>“University of Wisconsin–Madison Named an Innovation and Economic Prosperity University.” News, 15 Oct. 2025, news.wisc.edu/ university-of-wisconsin-madison-named-an-innovation-and-economic-prosperity-university/.</p>
+                <a href="https://gradapply.wisc.edu/apply/">UW-Madison Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="uiUrbanaL" style="display:none">
+                <h3>University of Illinois - Urbana Champaign</h3>
+                <h4>#46 in the U.S. for Law.</h4>
+                <p>University of Illinois - Urbana Champaign is a top ranking school local to the midwest!</p>
+                <img src="images/uiUrbana.jpg" alt="A photo of University of Illinois - Urbana Champaign's Campus.">
+                <p>Castillo, Juan José Mendoza. “History of Programs at University of Illinois - Urbana Champaign.” Blog, 28 Mar. 2025, sabordavida.pt/ qual-e-a-historia-e-os-principais-programas-da-u-of-illinois-at-urbana-champaign/.</p>
+                <a href="https://grad.illinois.edu/admissions/apply-now">University of Illinois - Urbana Champaign Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="marquetteL" style="display:none">
+                <h3>Marquette University</h3>
+                <h4>#59 in the U.S. for Law.</h4>
+                <p>Marquette is located in the heart of downtown Milwaukee, Wisconsin. It offers a city experience while being local and close to home!</p>
+                <img src="images/marquette.jpg" alt="A photo of Marquette's Campus.">
+                <p>“Get Ready for AWARM Welcome.” Marquette University, www.marquette.edu/visit/.</p>
+                <a href="https://graduate.admissions.marquette.edu/apply/">Marquette Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="wayneStateL" style="display:none">
+                <h3>Wayne State University</h3>
+                <h4>#62 in the U.S. for Law.</h4>
+                <p>Wayne State is located in Detroit, Michigan, and it has countless opportunities and organizations to pursue!</p>
+                <img src="images/marquette.jpg" alt="A photo of Wayne State's Campus.">
+                <p>“Wayne State University, Old Main Building with Historic Landmark...” Getty Images, www.gettyimages.com.au/detail/photo/ wayne-state-university-old-main-building-with-royalty-free-image/128253191.</p>
+                <a href="https://gradschool.wayne.edu/admissions">Wayne State Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="uStThomasL" style="display:none">
+                <h3>University of Saint Thomas - Minneapolis</h3>
+                <h4>#105 in the U.S. for Law.</h4>
+                <p>UStThomas is a located in Minneapolis, Minnesota and offers a rewarding education at a local campus!</p>
+                <img src="images/uStThomas.jpg" alt="A photo of University of Saint Thomas's Campus.">
+                <p>“University of St. Thomas (Minnesota).” Wikipedia, Wikimedia Foundation, 13 Nov. 2026, en.wikipedia.org/wiki/University_of_St. _Thomas_(Minnesota).</p>
+                <a href="https://www.stthomas.edu/admissions/graduate/">UStThomas Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
-            <div class="card" style="display:none">
-                
+            <div class="card" id="michiganStateL" style="display:none">
+                <h3>Michigan State University</h3>
+                <h4>#108 in the U.S. for Law.</h4>
+                <p>Michigan State is located in East Lansing, Michigan, and it offers a spirited and academic-centered lifestyle!</p>
+                <img src="images/michiganState.jpg" alt="A photo of Michigan State's Campus.">
+                <p>“Michigan State University: Lansing, MI.” Choose Lansing, www.lansing.org/michigan-state-university/.</p>
+                <a href="https://admissions.msu.edu/apply/graduate-students">Michigan State Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
+            </div>
+            <div class="card" id="huL" style="display:none">
+                <h3>Hamline University - St Paul</h3>
+                <h4>#152 in the U.S. for Law.</h4>
+                <p>Hamline is a located in St Paul, Minnesota and features a stunning campus with lively students!</p>
+                <img src="images/hu.jpg" alt="A photo of Hamline University's Campus.">
+                <p>(@1105_jp), jpellgen. “Hamline University - Old Main.” Flickr, Yahoo!, 17 Nov. 2026, www.flickr.com/photos/jpellgen/944324 1557/.</p>
+                <a href="https://mitchellhamline.edu/admission/applying/">Hamline Graduate Admissions</a>
+                <hr>
+                <button class="rankButton">Add to next rank spot</button>
             </div>
         </div>
     </main>
     <footer>
-
+        <ol id="rankingList"></ol>
     </footer>
     
 </body>
