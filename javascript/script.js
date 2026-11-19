@@ -1,5 +1,5 @@
 const rankList = document.getElementById("rankingList");
-var rankingData = JSON.parse(localStorage.getItem("rankingData" || "[]"));
+var rankingData = JSON.parse(sessionStorage.getItem("rankingData" || "[]"));
 
 function dataRender() {
     if (!rankList) {
@@ -25,7 +25,7 @@ function dataRender() {
 }
 
 function save() {
-    localStorage.setItem("rankingData", JSON.stringify(rankingData));
+    sessionStorage.setItem("rankingData", JSON.stringify(rankingData));
     dataRender();
 }
 
