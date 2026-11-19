@@ -1,7 +1,8 @@
 const rankList = document.getElementById("rankingList");
 function getRanking() {
     try {
-        return JSON.parse(localStorage.getItem("rankingData"));
+        const rank = JSON.parse(localStorage.getItem("rankingData") ?? "[]");
+        return Array.isArray(rank) ? rank.filter(name => typeof name === "string") : [];
     }
     catch {
         return [];
@@ -15,7 +16,7 @@ function dataRender() {
 
     rankList.replaceChildren();
     
-    getRanking().forEach(schoolName => {
+    getRanking().forEach((schoolName, index) => {
         const item = document.createElement("li");
         item.append(document.createTextNode(schoolName));
         const removeButton = document.createElement("button");
@@ -23,8 +24,9 @@ function dataRender() {
         removeButton.classList.add("remove");
         removeButton.textContent = "Remove";
         removeButton.addEventListener("click", () => {
-            rankingData.splice(index, 1);
-            save();
+            const ranking = getRanking();
+            ranking.splice(index, 1);
+            save(ranking);
             dataRender();
         });
         item.appendChild(removeButton);
@@ -48,16 +50,16 @@ function toggleCard(parameter) {
 
 function rankButton (event) {
     const rankedCard = event.currentTarget.closest(".card");
-    const schoolName = rankedCard.querySelector("h3").textContent.trim() + " ";
-    if (!rankedCard || !schoolName) {
+    const schoolName = rankedCard?.querySelector("h3")?.textContent.trim();
+    if (!schoolName) {
         return;
     }
 
     const ranking = getRanking();
 
     if(!ranking.includes(schoolName)) {
-        rankingData.push(schoolName);
-        save();
+        ranking.push(schoolName);
+        save(ranking);
         dataRender();
     }
 }
