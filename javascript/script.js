@@ -1,10 +1,32 @@
 const rankList = document.getElementById("rankingList");
+var rankingData = JSON.parse(localStorage.getItem("rankingData" || "[]"));
 
-function cardStart() {
-    var cards = document.getElementsByClassName("card");
-    for (var i = 0; i < 20; i++) {
-        cards[i].style.display = "none";
+function dataRender() {
+    if (!rankList) {
+        return;
     }
+
+    rankList.replaceChildren();
+    
+    rankingData.forEach((schoolName, index) => {
+        const item = document.createElement("li");
+        item.append(document.createTextNode(schoolName));
+        const removeButton = document.createElement("button");
+        removeButton.type = "button";
+        removeButton.classList.add("remove");
+        removeButton.textContent = "Remove";
+        removeButton.addEventListener("click", () => {
+            rankingData.splice(index, 1);
+            save();
+        });
+        item.appendChild(removeButton);
+        rankList.appendChild(item);
+    });
+}
+
+function save() {
+    localStorage.setItem("rankingData", JSON.stringify(rankingData));
+    dataRender();
 }
 
 function toggleCard(parameter) {
@@ -21,22 +43,12 @@ function rankButton (event) {
     const rankedCard = event.currentTarget.closest(".card");
     const schoolName = rankedCard.querySelector("h3").textContent.trim() + " ";
     const item = document.createElement("li");
-    item.append(document.createTextNode(schoolName));
-    const removeButton = document.createElement("button");
-    removeButton.type = "button";
-    removeButton.classList.add("remove");
-    removeButton.textContent = "Remove";
-    removeButton.addEventListener("click", removeSchoolFromList);
-    item.appendChild(removeButton);
-    rankList.appendChild(item);
+    rankingData.push(schoolName);
+    save();
 };
 
 document.querySelectorAll(".rankButton").forEach(button => {
     button.addEventListener("click", rankButton);
 });
 
-function removeSchoolFromList (event) {
-    const button = event.currentTarget.closest("button.remove");
-    if (!button || !rankList.contains(button)) return;
-    button.closest("li").remove();
-};
+dataRender();
