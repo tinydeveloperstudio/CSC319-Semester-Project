@@ -1,5 +1,12 @@
 const rankList = document.getElementById("rankingList");
-var rankingData = JSON.parse(sessionStorage.getItem("rankingData" || "[]"));
+function getRanking() {
+    try {
+        return JSON.parse(localStorage.getItem("rankingData"));
+    }
+    catch {
+        return [];
+    }
+}
 
 function dataRender() {
     if (!rankList) {
@@ -8,7 +15,7 @@ function dataRender() {
 
     rankList.replaceChildren();
     
-    rankingData.forEach((schoolName, index) => {
+    getRanking().forEach(schoolName => {
         const item = document.createElement("li");
         item.append(document.createTextNode(schoolName));
         const removeButton = document.createElement("button");
@@ -18,15 +25,15 @@ function dataRender() {
         removeButton.addEventListener("click", () => {
             rankingData.splice(index, 1);
             save();
+            dataRender();
         });
         item.appendChild(removeButton);
         rankList.appendChild(item);
     });
 }
 
-function save() {
-    sessionStorage.setItem("rankingData", JSON.stringify(rankingData));
-    dataRender();
+function save(ranking) {
+    localStorage.setItem("rankingData", JSON.stringify(ranking));
 }
 
 function toggleCard(parameter) {
@@ -42,9 +49,17 @@ function toggleCard(parameter) {
 function rankButton (event) {
     const rankedCard = event.currentTarget.closest(".card");
     const schoolName = rankedCard.querySelector("h3").textContent.trim() + " ";
-    const item = document.createElement("li");
-    rankingData.push(schoolName);
-    save();
+    if (!rankedCard || !schoolName) {
+        return;
+    }
+
+    const ranking = getRanking();
+
+    if(!ranking.includes(schoolName)) {
+        rankingData.push(schoolName);
+        save();
+        dataRender();
+    }
 }
 
 document.querySelectorAll(".rankButton").forEach(button => {
